@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOKEN_NAME (TOKEN_SYMBOL)</title>
+  <meta name="description" content="TOKEN_NAME is a BEP-20 token on BNB Smart Chain.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0e1116;
+      --card: #171c24;
+      --line: #2a3340;
+      --text: #e8edf4;
+      --muted: #9aa6b5;
+      --gold: #f0b90b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .mark {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: var(--gold);
+      color: #1a1400;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-family: Arial, sans-serif;
+      letter-spacing: 0.04em;
+    }
+    h1 {
+      margin: 20px 0 4px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .symbol { color: var(--muted); font-size: 18px; }
+    p { line-height: 1.55; color: var(--muted); font-family: Arial, sans-serif; }
+    .card {
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+    }
+    .label {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    code {
+      display: block;
+      margin-top: 8px;
+      font-size: 14px;
+      word-break: break-all;
+      color: var(--text);
+    }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    a.button {
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: #1a1400;
+      background: var(--gold);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+    a.ghost {
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--line);
+    }
+    dl {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 10px 16px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+    dt { color: var(--muted); }
+    dd { margin: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">TOKEN_SYMBOL</div>
+    <h1>TOKEN_NAME</h1>
+    <div class="symbol">TOKEN_SYMBOL · BEP-20 · BNB Smart Chain</div>
+    <p>
+      TOKEN_NAME is a BEP-20 token on BNB Smart Chain. The contract address below is the token used by the PancakeSwap pool.
+    </p>
+
+    <div class="card">
+      <div class="label">Contract</div>
+      <code>0xYOUR_TOKEN_ADDRESS</code>
+    </div>
+
+    <div class="links">
+      <a class="button" href="https://bscscan.com/token/0xYOUR_TOKEN_ADDRESS">BscScan</a>
+      <a class="button ghost" href="https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0xYOUR_TOKEN_ADDRESS">PancakeSwap</a>
+    </div>
+
+    <div class="card">
+      <dl>
+        <dt>Network</dt>
+        <dd>BNB Smart Chain</dd>
+        <dt>Standard</dt>
+        <dd>BEP-20</dd>
+        <dt>Decimals</dt>
+        <dd>18</dd>
+        <dt>Pool</dt>
+        <dd>PancakeSwap V2</dd>
+      </dl>
+    </div>
+  </main>
+</body>
+</html>
